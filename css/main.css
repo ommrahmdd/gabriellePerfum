@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Trispace, sans-serif;
+  background-color: #3e52a3;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+.main__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70rem;
+  height: 60rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  -webkit-box-shadow: 1rem 0.4rem 1rem rgba(0, 0, 0, 0.437);
+          box-shadow: 1rem 0.4rem 1rem rgba(0, 0, 0, 0.437);
+}
+
+.left__imgBox {
+  height: 100%;
+  width: 100%;
+}
+
+.left__imgBox img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__container-right {
+  background-color: white;
+}
+
+.main__container-right .right__txtBox {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 2rem;
+}
+
+.main__container-right .right__txtBox-smallHead {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.main__container-right .right__txtBox-bigHead {
+  font-size: 4rem;
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.main__container-right .right__txtBox-paragraph {
+  font-size: 1.6rem;
+}
+
+.main__container-right .right__txtBox-priceBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3e52a3;
+}
+
+.main__container-right .right__txtBox-priceBox h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-right: 1rem;
+}
+
+.main__container-right .right__txtBox-priceBox p {
+  text-decoration: line-through;
+  font-size: 1.6rem;
+}
+
+.main__container-right .right__txtBox .customBtn:link,
+.main__container-right .right__txtBox .customBtn:visited {
+  text-decoration: none;
+  color: white;
+  background-color: #3e52a3;
+  display: inline-block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 0.1rem solid #3e52a3;
+}
+
+.main__container-right .right__txtBox .customBtn:hover,
+.main__container-right .right__txtBox .customBtn:active {
+  color: #3e52a3;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .main__container {
+    width: 50rem;
+    height: 80rem;
+  }
+  .main__container-left {
+    height: 40%;
+  }
+  .main__container-right {
+    height: 60%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
